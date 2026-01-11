@@ -1,0 +1,25 @@
+# Pedir al usuario los dos números
+a = float(input("Ingrese el primer número (a): "))
+b = float(input("Ingrese el segundo número (b): "))
+
+# Pedir la operación (representada por un número)
+operacion = int(input("Ingrese la operación (1: suma, 2: resta, 3: multiplicación, 4: división): "))
+
+# Verificar la operación y calcular
+if operacion == 1:
+    resultado = a + b
+    print(f"El resultado de la suma es: {resultado}")
+elif operacion == 2:
+    resultado = a - b
+    print(f"El resultado de la resta es: {resultado}")
+elif operacion == 3:
+    resultado = a * b
+    print(f"El resultado de la multiplicación es: {resultado}")
+elif operacion == 4:
+    if b == 0:
+        print("Error: No se puede dividir por cero.")
+    else:
+        resultado = a / b
+        print(f"El resultado de la división es: {resultado}")
+else:
+    print("Operación no válida. Ingrese un número entre 1 y 4.")
